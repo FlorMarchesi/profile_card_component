@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: hsl(185, 75%, 39%);
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  height: 100vh;/*100vh quiere decir que ocupe el 100% de la pantalla vertical*/
+  display: flex; /*Al determinar display:flex, hago que el contenedor sea flexible
+  y por tanto le puedo dar una direccion, etc..*/
+  flex-direction: column; /*logro que el container y attribution esté posicionado como una
+  columna y por tanto queda todo centrado*/
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.background_top, .background_bottom{
+  position:absolute;
+  z-index: -1;
+  display: flex;
+}
+
+.background_top{
+  top: -550px;
+  left: -200px;
+  background-attachment: fixed;
+}
+.background_bottom{
+  bottom: -550px;
+  right: -200px;
+  background-attachment: fixed;
+}
+
+.container{
+  background-color: hsl(0,100%,100%);
+  border-radius: 1em;
+  width: 21em; /*375px*/
+}
+
+.container_header__img{
+  width: 100%;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+.container_section{
+  margin: 0 auto; /*Para centrar los elementos dentro del div section*/
+  /*Tuve que poner un div y no un section porque este último deja un espacio para un
+  aside, entonces no cubre el 100% del ancho de su contenedor*/
+  height: 8em;
+  text-align: center;
+}
+.container_section__img_profile{
+  position: relative;
+  top: -40%;
+  max-width: 96px;
+  max-height: 96px;
+  border-radius: 50%;
+  border: 0.35em solid hsl(0,100%,100%);
+}
+
+.container_section h1{
+  font-size: 1em;
+  position: relative;
+  top: -2.5em;
+}
+span{
+  font-weight: 400;
+  padding-left: 1.5em;
+  margin: -1em;
+  color: hsl(0,0%,68%);
+}
+.container_section p{
+  position: relative;
+  top: -2.5em;
+  color: hsl(0,0%,68%);
+  font-size: 0.9em;
+}
+
+footer{
+  border-top: 1px solid hsl(0,0%,68%);
+  padding: 0.8em 0;
+}
+
+table{
+  width: 100%;
+  text-align: center;
+  padding: 0.8em;
+}
+
+.numers{
+  font-weight: 700;
+}
+
+.datos{
+  font-size: 0.8em;
+  color: hsl(0,0%,68%);
+
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1em;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
